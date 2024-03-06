@@ -17,9 +17,6 @@ import { Transactions, TransactionsProps } from "@/components/Transactions"
 import { useGoalRepository } from "@/database/useGoalRepository"
 import { useTransactionRepository } from "@/database/useTransactionRepository"
 
-// UTILS
-import { mocks } from "@/utils/mocks"
-
 export default function Home() {
   // LISTS
   const [transactions, setTransactions] = useState<TransactionsProps>([])
