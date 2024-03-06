@@ -62,9 +62,38 @@ export function useGoalRepository() {
         }
     }
 
+    function remove(id: number) {
+        try {
+            const statement = db.prepareSync("DELETE FROM goals WHERE id = $id");
+            statement.executeSync({ $id: id });
+        } catch (error) {
+            throw error;
+        }
+    }
+
+    function update(id: number, goal: GoalCreateDatabase) {
+        try {
+            const statement = db.prepareSync(`
+                UPDATE goals
+                SET name = $name, total = $total
+                WHERE id = $id
+            `);
+
+            statement.executeSync({
+                $id: id,
+                $name: goal.name,
+                $total: goal.total,
+            });
+        } catch (error) {
+            throw error;
+        }
+    }
+
     return {
         create,
         all,
         show,
+        remove,
+        update,
     };
 }
