@@ -18,7 +18,7 @@ Agora é só aproveitar!!!✅✅✅
 O site é composto por 2 telas diferentes:
 
 - **Metas:** Nesta tela, os usuários podem ver quais metas eles tem e clicar na qual ele quiser ou poder criar uma nova meta.
-- **Detalhes da meta** Nesta tela, os usuários podem ver o progresso da meta, editar a meta, ou deletar a meta. Aleḿ disso, o usuário pode adicionar valores ou remover valores da meta, e o aplicativo irá calcular o progresso da meta.
+- **Detalhes da meta:** Nesta tela, os usuários podem ver o progresso da meta, editar a meta, ou deletar a meta. Aleḿ disso, o usuário pode adicionar valores ou remover valores da meta, e o aplicativo irá calcular o progresso da meta.
 
 ## :dart: Passos
 
